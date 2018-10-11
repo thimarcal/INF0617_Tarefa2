@@ -18,13 +18,13 @@ for line in sys.stdin:
 
     try:
         if float(stations[station][DIFF]) < float(difference):
-            print(longitude, latitude, date, time, difference)
+            #print(longitude, latitude, date, time, difference)
             stations[station][DATE] = date
             stations[station][TIME] = time
         stations[station][DIFF] = max(float(stations[station][DIFF]), float(difference))
     except:
         stations[station] = {}
-        print("Adding for "+station, difference)
+        #print("Adding for "+station, difference)
         stations[station][DIFF] = difference
         stations[station][LAT] = latitude
         stations[station][LONG] = longitude
