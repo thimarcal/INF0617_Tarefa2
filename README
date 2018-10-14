@@ -1,0 +1,5 @@
+Comando para execução:
+
+- cat weather-2017/*.txt | python map.py | reduce.py 
+
+ou python3, caso seja o comando reconhecido para utilização do python 3.6
